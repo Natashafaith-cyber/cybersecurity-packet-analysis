@@ -16,3 +16,8 @@ print("[-] Nmap not found in system path. Please ensure Nmap is installed.")
 if __name__ == "__main__":
       print("[*] Starting Network Scanner Project...")
     test_nmap_installation()
+"""Scans the target subnet for live hosts and common open ports
+"""
+nm = nmap.PortScanner()
+    print(f"[*] Scanning subnet: {target_subnet}...")
+
